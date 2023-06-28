@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+/*
+ * usual navbar styling
+ */
+#navbar {
+  /* navbar positioning */
+  position: sticky;
+  top: 0px;
+
+  /* positioning of the links */
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: larger;
+
+  /* navbar border */
+  border-bottom: 1px solid grey;
+
+  backdrop-filter: blur(5px);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  font-family: 'Monaco', monospace;
+}
+
+#navbar a:hover {
+  color: #08f;
+  box-shadow: 0 0.5em 0.5em -0.4em #08f;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+/*
+ * change navbar to hamburger style below 600 px
+ */
+@media only screen and (min-width: 600px) {
+}
+
+header {
+  border: 2px solid blue;
+  padding-bottom: 50vh;
+}
+
+#introHeader {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hello,
+#name,
+#profession {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#hello {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+#aboutme {
+  border: 2px solid red;
+  padding-bottom: 100vh;
+}
